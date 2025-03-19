@@ -131,38 +131,3 @@ app.listen(port, () => {
   console.log(`Document Question Answering Service listening on port ${port}`);
 });
 
-
-solution to this question:
-
-async function fetchData(urls) {
-  try {
-    const responses = await Promise.all(
-      urls.map(url => fetch(url)) // Fetch all URLs concurrently
-    );
-
-    // Check for HTTP errors before parsing JSON.
-    for (const response of responses) {
-      if (!response.ok) {
-        throw new Error("Data fetching failed"); // Reject immediately on any HTTP error
-      }
-    }
-
-    const jsonPromises = responses.map(response => response.json()); // Parse JSON concurrently
-    const data = await Promise.all(jsonPromises); // Wait for all JSON parsing
-
-    // Calculate the sum
-    let sum = 0;
-    for (const item of data) {
-      if (typeof item.value !== 'number') {
-          throw new Error("Invalid data format: 'value' property must be a number.");
-        }
-      sum += item.value;
-    }
-
-    return sum;
-
-  } catch (error) {
-    // Catch any error (fetch errors, JSON parsing errors, HTTP errors)
-      throw new Error("Data fetching failed"); //Consistent error message
-  }
-}
