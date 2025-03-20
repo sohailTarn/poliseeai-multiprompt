@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 // Configure Vertex AI
-const projectId = process.env.PROJECT_ID;  // Ensure this is set in Cloud Run
+const projectId = process.env.PROJECT_ID || "general-testing-450104";  // Ensure this is set in Cloud Run
 const location = process.env.LOCATION || 'us-central1'; // Default location
 const modelName = 'gemini-2.0-flash-001';  // Specify the model
 const vertexAI = new VertexAI({ project: projectId, location: location });
