@@ -1,0 +1,63 @@
+bindings:
+- members:
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/aiplatform.user
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  role: roles/artifactregistry.createOnPushWriter
+- members:
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/artifactregistry.reader
+- members:
+  - serviceAccount:service-7762952875@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-7762952875@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:service-7762952875@gcf-admin-robot.iam.gserviceaccount.com
+  role: roles/cloudfunctions.serviceAgent
+- members:
+  - serviceAccount:service-7762952875@container-analysis.iam.gserviceaccount.com
+  role: roles/containeranalysis.ServiceAgent
+- members:
+  - serviceAccount:service-7762952875@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - user:sohail.qureshi@tarnglobal.com
+  role: roles/owner
+- members:
+  - serviceAccount:service-7762952875@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/run.developer
+- members:
+  - serviceAccount:service-7762952875@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  role: roles/storage.admin
+- members:
+  - serviceAccount:7762952875-compute@developer.gserviceaccount.com
+  - serviceAccount:7762952875@cloudbuild.gserviceaccount.com
+  role: roles/storage.objectViewer
+etag: BwYwwG0i_aM=
+version: 1
