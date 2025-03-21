@@ -11,11 +11,11 @@ const cors = require('cors');
 
 const app = express();
 // Configure CORS to allow your frontend's origin
-app.use(cors({
-    origin: 'https://f16532ea-7934-49ea-98e0-8f3562d2b8ce.lovableproject.com', // Your frontend URL
-    methods: ['GET', 'POST'], // Allowed HTTP methods
-    allowedHeaders: ['Content-Type', 'Authorization'] // Headers your frontend sends
-  }));
+const allowedOrigins = [
+    'https://f16532ea-7934-49ea-98e0-8f3562d2b8ce.lovableproject.com',
+    'https://preview--polisee-ai-multiple-prompts-test.lovable.app/',
+    'https://tarnglobal.com' // Allow production domain
+  ];
   
   app.use(express.json());
 
