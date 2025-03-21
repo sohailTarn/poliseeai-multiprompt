@@ -16,6 +16,7 @@ const location = process.env.LOCATION || 'us-central1'; // Default location
 const modelName = 'gemini-2.0-flash-001';  // Specify the model
 const vertexAI = new VertexAI({ project: projectId, location: location });
 
+
 let sourceDocumentContent = '';
 let targetDocumentContent = '';
 let sourceDocumentUrl = '';
