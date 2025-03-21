@@ -90,7 +90,16 @@ app.post('/answer-question', async (req, res) => {
     });
 
 
-    const prompt = `You are a helpful AI assistant. You have access to the content of two documents, a source document and a target document. Use the information in these documents to answer the following question.
+    const prompt = `You are a compliance expert joining a new bank. You need to familiarize yourself with the bank's Anti-Money Laundering (AML) policy (source document) and then use it to review a client's AML policy target document. All your output must be nicely formatted.
+    Both documents will be from Financial Institutions. The first document will be from the source bank and the second document will be from a target bank who is a client of yours.
+    **Verify that the uploaded files are Policy Documents**
+    Carefully parse the documents and check if both of the documents are AML policies. If the documents contain something other than AML policies warn the user and stop further processing. 
+    In this instance the **Output** should be **Sorry I cannot process this document as I am trained on AML policies**
+    You have access to the content of two documents, a source document and a target document. Use the information in these documents to answer the following question.
+    ** Analyze the Bank's AML Policy**
+
+    Carefully analyse the provided Bank's AML policy document (source document) and understand to the answer the questions.*
+
       Source Document Content: ${sourceDocumentContent}
       Target Document Content: ${targetDocumentContent}
       Question: ${question}`;
