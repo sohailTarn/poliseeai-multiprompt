@@ -100,7 +100,10 @@ app.post('/answer-question', async (req, res) => {
     const streamingResp = await model.generateContentStream(prompt);
     let answerText = '';
     for await (const chunk of streamingResp.stream) {
-        answerText += chunk.text();
+      // Handle potential missing candidates/parts safely
+      if (chunk.candidates?.[0]?.content?.parts?.[0]?.text) {
+        answerText += chunk.candidates[0].content.parts[0].text;
+      }
     }
 
 
