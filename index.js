@@ -16,6 +16,20 @@ const allowedOrigins = [
     'https://preview--polisee-ai-multiple-prompts-test.lovable.app/',
     'https://tarnglobal.com' // Allow production domain
   ];
+  app.use(cors({
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps, Postman)
+      if (!origin) return callback(null, true);
+      
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
   
   app.use(express.json());
 
