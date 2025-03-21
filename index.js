@@ -100,8 +100,11 @@ app.post('/answer-question', async (req, res) => {
 
     Carefully analyse the provided Bank's AML policy document (source document) and understand to the answer the questions.*
 
+    **The following information is just for your understanding. Do not add it in your response
+
       Source Document Content: ${sourceDocumentContent}
       Target Document Content: ${targetDocumentContent}
+      **
       Question: ${question}`;
 
     console.log(`Sending question to Gemini Flash 2.0: ${question}`);
