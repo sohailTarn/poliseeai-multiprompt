@@ -7,9 +7,17 @@ const express = require('express');
 const pdf = require('pdf-parse');
 const axios = require('axios');
 const { VertexAI } = require('@google-cloud/vertexai');
+const cors = require('cors');
 
 const app = express();
-app.use(express.json());
+// Configure CORS to allow your frontend's origin
+app.use(cors({
+    origin: 'https://f16532ea-7934-49ea-98e0-8f3562d2b8ce.lovableproject.com', // Your frontend URL
+    methods: ['GET', 'POST'], // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'] // Headers your frontend sends
+  }));
+  
+  app.use(express.json());
 
 // Configure Vertex AI
 const projectId = process.env.PROJECT_ID || "general-testing-450104";  // Ensure this is set in Cloud Run

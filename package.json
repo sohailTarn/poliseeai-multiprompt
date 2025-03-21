@@ -4,16 +4,16 @@
     "description": "Document Question Answering Service using Cloud Run and Gemini Flash 2.0",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js"
     },
     "dependencies": {
-      "express": "^4.17.1",
-      "pdf-parse": "^1.1.1",
-      "axios": "^1.6.0",
-      "@google-cloud/vertexai": "^1.9.3"
+        "@google-cloud/vertexai": "^1.9.3",
+        "axios": "^1.6.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "pdf-parse": "^1.1.1"
     },
     "engines": {
-      "node": ">=18"
+        "node": ">=18"
     }
-  }
-  
+}
