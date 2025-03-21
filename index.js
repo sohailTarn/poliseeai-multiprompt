@@ -18,17 +18,52 @@ const allowedOrigins = [
   ];
   app.use(cors({
     origin: function (origin, callback) {
-      // Allow requests with no origin (like mobile apps, Postman)
+      // Allow requests with no origin (like mobile apps or Postman)
       if (!origin) return callback(null, true);
-      
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
+  
+      try {
+        const parsedOrigin = new URL(origin);
+        const originHost = parsedOrigin.hostname;
+        const originProtocol = parsedOrigin.protocol;
+  
+        // 1. Check exact matches first
+        if (allowedOrigins.includes(origin)) {
+          return callback(null, true);
+        }
+  
+        // 2. Check subdomains and base domains
+        const isAllowed = allowedOrigins.some(allowed => {
+          // Handle full URLs in allowed list
+          const allowedClean = allowed.startsWith('http') 
+            ? new URL(allowed).hostname 
+            : allowed;
+  
+          // Split domain parts
+          const originParts = originHost.split('.');
+          const allowedParts = allowedClean.split('.');
+  
+          // Check if origin matches or is subdomain
+          return (
+            originHost === allowedClean || // Exact match
+            (
+              originParts.slice(-allowedParts.length).join('.') === allowedClean &&
+              originProtocol === 'https:' // Force HTTPS for subdomains
+            )
+          );
+        });
+  
+        if (isAllowed) {
+          callback(null, true);
+        } else {
+          callback(new Error('Not allowed by CORS'));
+        }
+      } catch (err) {
+        callback(new Error('Invalid origin'));
       }
     },
     methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
   }));
   
   app.use(express.json());
