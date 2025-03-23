@@ -149,7 +149,7 @@ app.post('/answer-question', async (req, res) => {
 
     const prompt = `You are a compliance expert joining a new bank. You need to familiarize yourself with the bank's Anti-Money Laundering (AML) policy (source document) and then use it to review and answer a client's AML policy target document. All your output must be nicely formatted.
     Both documents will be from Financial Institutions. The first document will be from the source bank and the second document will be from a target bank who is a client of yours.
-    Your job is to Answer the questions like a compliance expert who looks keenly at the policies as tries to find the smallest non-compliant clauses related to the question. Keep you answers concise. After answering the question give your analysis if this is compliant with source, say "Compliant" Else say "Needs Manual Review". 
+    Your job is to Answer the questions like a compliance expert who looks keenly at the policies as tries to find the smallest non-compliant clauses related to the question. Keep you answers concise. After answering the question give your analysis if this is compliant with source, say "Status: Compliant" Else say "Status: Needs Manual Review". 
     **The following information is just for your understanding. Do not add it in your response
 
       Source Document Content: ${sourceDocumentContent}
