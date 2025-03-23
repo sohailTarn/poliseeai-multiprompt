@@ -14,6 +14,7 @@ const app = express();
 const allowedOrigins = [
     'https://f16532ea-7934-49ea-98e0-8f3562d2b8ce.lovableproject.com',
     'https://preview--polisee-ai-multiple-prompts-test.lovable.app/compare-documents',
+    'https://id-preview--f16532ea-7934-49ea-98e0-8f3562d2b8ce.lovable.app',
     'https://tarnglobal.com' // Allow production domain
   ];
   app.use(cors({
