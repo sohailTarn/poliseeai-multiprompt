@@ -154,7 +154,7 @@ app.post('/answer-question', async (req, res) => {
 
     Example 1:
 
-    Question: What is the name of the documents??
+    Question: What are the names of the documents?
     Answer: The name of the Documents are:
     Bank's Document: *name_of_source_document 
     Client's Document: *name_of_target_document*
@@ -171,7 +171,7 @@ app.post('/answer-question', async (req, res) => {
 
     Example 3:
     *Does the client hold any regulatory licence? If so please state this
-    If the client holds a regulatory license explicitly mentioned in the document Answer: Yes, the clients policy does have a regulatory license  **Reference licence** **Section XX**
+    If the client holds a regulatory license explicitly mentioned in the document Answer: Yes, the clients policy does have a regulatory license  **Reference licence** **Target Document Section Reference**
     Status: Compliant
 
     If the client DOES NOT hold a regulatory license explicitly mentioned in the document Answer: No, the clients policy does have a regulatory license  **Reference licence** **Section XX**
