@@ -179,6 +179,19 @@ app.post('/answer-question', async (req, res) => {
     If the client DOES NOT hold a regulatory license explicitly mentioned in the document Answer: No, the clients policy does have a regulatory license  **Reference licence** **Section XX**. If the document mentions any other licese mention it here.
     Status: Needs Manual Review
 
+    Example 4: 
+    *Does the client have different requirements for onboarding companies and individuals?
+    If the client does not onboard Corporate Customers then Answer: **The client does not onboard corporate customers therefore the policy does not refer to the onboarding of corporate customers.**Give reference of relevant clauses** **
+    If the client onboards both individuals and Corporate Customers/Companies then Answer: **Yes the client does onboard both corporates and individuals and it has different requirements based on the type of customer that they are onboarding. **Give reference of relevant clauses**
+
+    Example 5:
+    * What are the client's identity verification requirements?
+    Example Answer: 
+    Simplified Due Dilligence (SDD) will not be utilized by the business, which aligns with the source document, as the source document states it is extremely important to recognise that by “end users”, Moorwand means the users of the Programme, and as such, it is responsible to have thorough due diligence.
+    Customer Due Diligence (CDD) is required to verify customer’s identity and comprise the risk profile of the customer. ID and proof of address must be sought. This could include requesting a copy of the customer’s passport, driving licence or government-issued ID, proof of address and/or by performing electronic Know Your Customer (KYC) checks and requesting information about the customer’s source of wealth/funds. Should there be any doubt about the validation of the customer’s identity, Enhanced Due Diligence measures should be undertaken.
+
+
+
     ***End of examples***
 
 
