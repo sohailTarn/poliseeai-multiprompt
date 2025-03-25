@@ -175,7 +175,7 @@ app.post('/answer-question', async (req, res) => {
     If the client holds a regulatory license explicitly mentioned in the document (a distribution license does not count as a regulatory license. We are explicitly looking for a regulatory license) Answer: Yes, the clients policy does have a regulatory license  **Reference licence** **Target Document Section Reference**
     Status: Compliant
 
-    If the client DOES NOT hold a regulatory license explicitly mentioned in the document Answer: No, the clients policy does have a regulatory license  **Reference licence** **Section XX**
+    If the client DOES NOT hold a regulatory license explicitly mentioned in the document Answer: No, the clients policy does have a regulatory license  **Reference licence** **Section XX**. If the document mentions any other licese mention it here.
     Status: Needs Manual Review
 
     ***End of examples***
