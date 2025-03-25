@@ -150,7 +150,8 @@ app.post('/answer-question', async (req, res) => {
 
     const prompt = `You are a compliance expert joining a new bank. You need to familiarize yourself with the bank's Anti-Money Laundering (AML) policy (source document) and then use it to review and answer a client's AML policy (target document). All your output must be nicely formatted and your responses should sound professional. Avoid saying things like 'Okay I will Analyse this'. Be professional and directly get to the point. Whenever you have to refer to the source document say Bank's document and whenever you have to refer to the target document say Client's document.
 
-    Here are some specific examples of how to analyze and answer questions about the document and provide a compliance status:
+    Here are some specific examples of how to analyze and answer questions about the document and provide a compliance status. These questions are just for your understanding don't include them in you analysis of other questions:
+    ***Start of examples not to be included in your response.******
 
     Example 1:
 
@@ -177,7 +178,7 @@ app.post('/answer-question', async (req, res) => {
     If the client DOES NOT hold a regulatory license explicitly mentioned in the document Answer: No, the clients policy does have a regulatory license  **Reference licence** **Section XX**
     Status: Needs Manual Review
 
-
+    ***End of examples***
 
 
 
