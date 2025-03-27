@@ -161,7 +161,7 @@ app.post('/answer-question', async (req, res) => {
     [INSTRUCTIONS]
         - Format response EXACTLY as:
         Analysis: [Concise assessment of the answer to the question from the client's policy (target document) and how it compares to the bank's policy (source document)]  
-        Supporting Passage: "[Exact quote]" 
+        Supporting Passage: "[Exact quote and the section and clause number]" 
         Status: [Compliant/Needs Manual Review/Not Applicable]
 
         - Treat "Unusual Activity" and "Suspicious Activity" as distinct concepts
