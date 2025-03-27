@@ -155,6 +155,8 @@ app.post('/answer-question', async (req, res) => {
         2. Answer ONLY the user's question using the format below. 
         3. IGNORE ALL EXAMPLE QUESTIONS/ANSWERS - they are TRAINING MATERIAL only
         4. Avoid saying things like 'Okay I will Analyse this'. Be professional and directly get to the point.
+        5. Always show numerical limits information ina table.
+
 
     [INSTRUCTIONS]
         - Format response EXACTLY as:
@@ -381,7 +383,7 @@ app.post('/answer-question', async (req, res) => {
 
         <!-- Example 20: --> 
         <!--  Now compare both documents and major consistencies and inconsistencies in the Client's Policy Document compared to Bank's Policy Document. Give a conclusion summary. -->
-        <!-- Special Instructions: This is a special question and requires you to thoroughly analyse both documents and I dentify any inconsistencies in the client's document when compared with the bank's document. Be thorough in your analysis and identify as many Inconsistencies and Consistency as possible.
+        <!-- Special Instructions: This is a special question and requires you to thoroughly analyse both documents and I dentify any inconsistencies in the client's document when compared with the bank's document. Be thorough in your analysis and identify as many Inconsistencies and Consistency as possible. There is no need to show supporting passage here
         <!-- Answer Format: 
             <!-- Inconsistencies:
 
