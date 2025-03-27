@@ -171,6 +171,7 @@ app.post('/answer-question', async (req, res) => {
 
         <!-- Example 1: --> 
         <!-- Question: What are the document names? -->
+        <!-- Special Instructions: You don't need any analysis or supporting passage for this question -->
         <!-- Answer Format: The name of the Documents are:
             Bank's Document: *name_of_source_document 
             Client's Document: *name_of_target_document -->
@@ -380,7 +381,7 @@ app.post('/answer-question', async (req, res) => {
 
         <!-- Example 20: --> 
         <!--  Now compare both documents and major consistencies and inconsistencies in the Client's Policy Document compared to Bank's Policy Document. Give a conclusion summary. -->
-        
+        <!-- Special Instructions: This is a special question and requires you to thoroughly analyse both documents and I dentify any inconsistencies in the client's document when compared with the bank's document. Be thorough in your analysis and identify as many Inconsistencies and Consistency as possible.
         <!-- Answer Format: 
             <!-- Inconsistencies:
 
