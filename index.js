@@ -387,7 +387,7 @@ app.post('/answer-question', async (req, res) => {
     [ACTUAL TASK]
         === Documents ===
         Bank Policy (Source): ${sourceDocumentContent}
-        Client Policy (Target): ${sourceDocumentContent}
+        Client Policy (Target): ${targetDocumentContent}
 
         === Critical Rules ===
         1. TREAT "UNUSUAL ACTIVITY" AND "SUSPICIOUS ACTIVITY" AS DISTINCT CONCEPTS
