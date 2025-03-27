@@ -380,8 +380,27 @@ app.post('/answer-question', async (req, res) => {
                 <!-- Status: [Compliance Status] -->
         -->
 
+Your Analysis should always start with Numerical limits in the following format. This is the most important part of the analysis.
+Numerical Limits
+
 
         <!-- Example 20: --> 
+        <!-- Identify any Numerical limits in both documents and show them in a table with following columns: 
+            Definition | Bank Limit | Bank Limit | Client Source Document Section |
+            -->
+        
+        <!-- Answer Format: 
+            <!-- Analysis: 
+                | Definition | Bank Limit | Bank Limit | Client Source Document Section |
+                |---|---|---|---|
+                | ... | ... | ... | ... |
+                
+            -->
+                <!-- Status: [Compliance Status] -->
+        -->
+
+
+        <!-- Example 21: --> 
         <!--  Now compare both documents and major consistencies and inconsistencies in the Client's Policy Document compared to Bank's Policy Document. Give a conclusion summary. -->
         <!-- Special Instructions: This is a special question and requires you to thoroughly analyse both documents and I dentify any inconsistencies in the client's document when compared with the bank's document. Be thorough in your analysis and identify as many Inconsistencies and Consistency as possible. There is no need to show supporting passage here
         <!-- Answer Format: 
