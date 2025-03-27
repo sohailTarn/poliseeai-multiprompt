@@ -164,6 +164,8 @@ app.post('/answer-question', async (req, res) => {
 
         - Treat "Unusual Activity" and "Suspicious Activity" as distinct concepts
         - Cite section numbers when available
+        - Refer to the source document as Bank's Policy Document. Do not call it the source document while answering questions
+        - Refer to the target document as Clients's Policy Document. Do not call it the target document while answering questions
 
     [TRAINING EXAMPLES - DO NOT USE THESE IN RESPONSES]
 
