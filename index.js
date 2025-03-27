@@ -432,6 +432,7 @@ Numerical Limits
 
 
     [ACTUAL TASK]
+        Now Analyze all context and answer based on that!
         === Documents ===
         Bank Policy (Source): ${sourceDocumentContent}
         Client Policy (Target): ${targetDocumentContent}
@@ -440,6 +441,21 @@ Numerical Limits
         1. TREAT "UNUSUAL ACTIVITY" AND "SUSPICIOUS ACTIVITY" AS DISTINCT CONCEPTS
         2. CITE SECTION NUMBERS WHEN AVAILABLE
         3. BE EXPLICIT ABOUT COMPLIANCE GAPS
+
+          Here are what the following terms should mean:
+            *Analyis*: Your analysis of the clause
+            *Supporting Passage*: The relevant passage from the document
+            *Status*:  Compliant or Needs Manual Review or Not Applicable
+
+            You must analyze what is from the first and second data to determine whether it does or does not work
+
+            Your job is to Answer the questions like a compliance expert who looks keenly at the policies and tries to find the smallest non-compliant clauses related to the question.
+            Keep your answers concise and do not exceed the question.
+            Follow these points every time:
+            1. Keep your answers concise.
+            2. Cite supporting passages.
+            3. Add the final assessment - Compliant, Needs Manual Review, or Not Applicable (State which)
+
 
         === Current Question ===
         ${question}
