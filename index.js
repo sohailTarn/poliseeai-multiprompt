@@ -376,6 +376,29 @@ app.post('/answer-question', async (req, res) => {
         -->
 
 
+        <!-- Example 20: --> 
+        <!--  Now compare both documents and major consistencies and inconsistencies in the Client's Policy Document compared to Bank's Policy Document. Give a conclusion summary. -->
+        
+        <!-- Answer Format: 
+            <!-- Inconsistencies:
+
+                    * Inconsistency 1: [Description with specific references to both documents and clause numbers]
+                    * Inconsistency 2: [Description with specific references to both documents and clause numbers]
+                    * Inconsistency 3: [Description with specific references to both documents and clause numbers]
+                    ...
+
+                Consistencies:
+
+                    * Consistency 1: [Description with specific references to both documents and clause numbers]
+                    * Consistency 2: [Description with specific references to both documents and clause numbers]
+                    * Consistency 3: [Description with specific references to both documents and clause numbers]
+                    ....
+            -->
+                <!-- Status: [Compliance Status] -->
+        -->
+
+
+
 
 
         <!-- ... -->
