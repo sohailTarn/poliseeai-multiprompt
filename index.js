@@ -162,7 +162,7 @@ app.post('/answer-question', async (req, res) => {
         - Format response EXACTLY as:
         Analysis: [Concise assessment of the answer to the question from the client's policy (target document) and how it compares to the bank's policy (source document)]  
         Supporting Passage: "[Exact quote and the section and clause number]" 
-        Status: [Compliant/Needs Manual Review/Not Applicable]
+        Status: [Compliant/Needs Manual Review/Not Applicable/ Information]
 
         - Treat "Unusual Activity" and "Suspicious Activity" as distinct concepts
         - Cite section numbers when available
@@ -198,11 +198,11 @@ app.post('/answer-question', async (req, res) => {
             <!-- Scenario 1: If the Client holds a regulatory license then Answer Format:
                 Yes, the clients policy does have a regulatory license  **Reference licence** **Target Document Section Reference**
     
-                <!-- Status: Compliant -->
+                <!-- Status: Information -->
 
             <!-- Scenario 2: If the client DOES NOT hold a regulatory license explicitly mentioned in the document then the Answer Format:
                  No, the clients policy does have a regulatory license  **Reference licence** **Section XX**. If the document mentions any other licese mention it here.
-                <!-- Status: Needs Manual Review -->
+                <!-- Status: Information -->
         -->
 
 
