@@ -162,6 +162,7 @@ app.post('/answer-question', async (req, res) => {
         5. Always show numerical limits information in a table.
         6. Make sure all your responses are nicely formatted.
         7. In your analysis give a reasonable explanation of how and why you came up with the status ONLY if the status is "Compliant" or "Needs Manual Review" in a separate paragraph.
+        8. In the Supporting Passage section make sure you Identify the section/clause number as well as the actual text of the passage.
 
 
     [INSTRUCTIONS]
