@@ -160,6 +160,7 @@ app.post('/answer-question', async (req, res) => {
         3. IGNORE ALL EXAMPLE QUESTIONS/ANSWERS - they are TRAINING MATERIAL only
         4. Avoid saying things like 'Okay I will Analyse this'. Be professional and directly get to the point.
         5. Always show numerical limits information ina table.
+        6. Make sure all your responses are nicely formatted.
 
 
     [INSTRUCTIONS]
