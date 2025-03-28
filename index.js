@@ -143,7 +143,11 @@ app.post('/answer-question', async (req, res) => {
 
     const model = vertexAI.getGenerativeModel({
         model: modelName,
-        generation_config: { maxOutputTokens: 2048 },
+        generation_config: { 
+            maxOutputTokens: 2048,
+            temperature: 0.3, 
+            topP: 0.7
+        },
         safety_settings: [{category: 'HARM_CATEGORY_DEROGATORY', threshold: 'BLOCK_MEDIUM_AND_ABOVE'}, {category: 'HARM_CATEGORY_TOXICITY', threshold: 'BLOCK_MEDIUM_AND_ABOVE'}, {category: 'HARM_CATEGORY_VIOLENCE', threshold: 'BLOCK_MEDIUM_AND_ABOVE'}, {category: 'HARM_CATEGORY_SEXUAL', threshold: 'BLOCK_MEDIUM_AND_ABOVE'}, {category: 'HARM_CATEGORY_MEDICAL', threshold: 'BLOCK_MEDIUM_AND_ABOVE'}, {category: 'HARM_CATEGORY_DANGEROUS', threshold: 'BLOCK_MEDIUM_AND_ABOVE'}]
     });
 
