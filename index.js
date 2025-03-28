@@ -159,9 +159,9 @@ app.post('/answer-question', async (req, res) => {
         2. Answer ONLY the user's question using the format below. 
         3. IGNORE ALL EXAMPLE QUESTIONS/ANSWERS - they are TRAINING MATERIAL only
         4. Avoid saying things like 'Okay I will Analyse this'. Be professional and directly get to the point.
-        5. Always show numerical limits information i na table.
+        5. Always show numerical limits information in a table.
         6. Make sure all your responses are nicely formatted.
-        7. In your analysis give the reasonable explanation of how and why you came up with the status ONLY if the status is "Compliant" or "Needs Manual Review" in a separate paragraph.
+        7. In your analysis give a reasonable explanation of how and why you came up with the status ONLY if the status is "Compliant" or "Needs Manual Review" in a separate paragraph.
 
 
     [INSTRUCTIONS]
@@ -173,7 +173,7 @@ app.post('/answer-question', async (req, res) => {
         - Treat "Unusual Activity" and "Suspicious Activity" as distinct concepts
         - Cite section numbers when available
         - Refer to the source document as Bank's Policy Document. Do not call it the source document while answering questions
-        - Refer to the target document as Clients's Policy Document. Do not call it the target document while answering questions
+        - Refer to the target document as Client's Policy Document. Do not call it the target document while answering questions
 
     [TRAINING EXAMPLES - DO NOT USE THESE IN RESPONSES]
 
@@ -207,7 +207,7 @@ app.post('/answer-question', async (req, res) => {
                 <!-- Status: Information -->
 
             <!-- Scenario 2: If the client DOES NOT hold a regulatory license explicitly mentioned in the document then the Answer Format:
-                 No, the clients policy does have a regulatory license  **Reference licence** **Section XX**. If the document mentions any other licese mention it here.
+                 No, the clients policy does have a regulatory license  **Reference licence** **Section XX**. If the document mentions any other licnese mention it here.
                 <!-- Status: Information -->
         -->
 
@@ -231,8 +231,8 @@ app.post('/answer-question', async (req, res) => {
         <!-- What are the client's identity verification requirements? -->
         
         <!-- Answer Format: 
-            <!-- Analysis: Simplified Due Dilligence (SDD) will not be utilized by the business, which aligns with the Bank's Policy, as the Bank's Policy states that it is extremely important to recognise that by “end users”, Moorwand means the users of the Programme, and as such, it is responsible to have thorough due diligence.
-            Customer Due Diligence (CDD) is required to verify customer’s identity and comprise the risk profile of the customer. ID and proof of address must be sought. This could include requesting a copy of the customer’s passport, driving licence or government-issued ID, proof of address and/or by performing electronic Know Your Customer (KYC) checks and requesting information about the customer’s source of wealth/funds. Should there be any doubt about the validation of the customer’s identity, Enhanced Due Diligence measures should be undertaken.
+            <!-- Analysis: Simplified Due Diligence (SDD) will not be utilized by the business, which aligns with the Bank's Policy, as the Bank's Policy states that it is extremely important to recognise that by “end users”, Moorwand means the users of the Programme, and as such, it is responsible to have thorough due diligence.
+            Customer Due Diligence (CDD) is required to verify the customer’s identity and comprise the risk profile of the customer. ID and proof of address must be sought. This could include requesting a copy of the customer’s passport, driving licence or government-issued ID, proof of address and/or by performing electronic Know Your Customer (KYC) checks and requesting information about the customer’s source of wealth/funds. Should there be any doubt about the validation of the customer’s identity, Enhanced Due Diligence measures should be undertaken.
             -->
                 <!-- Status: [Compliance Status] -->
         -->
@@ -275,7 +275,7 @@ app.post('/answer-question', async (req, res) => {
 
 
         <!-- Example 9: --> 
-        <!-- Are there any third party companies used in the above processes? if so please outline the party and the activity they are undertaking. -->
+        <!-- Are there any third party companies used in the above processes? if so, please outline the party and the activity they are undertaking. -->
         
         <!-- Answer Format: 
             <!-- Analysis:  Yes, Lexis Nexis/Tru Narrative for Sanctions Screening and Thistle Initiatives (Knowledge Centre) for Staff Training.
@@ -358,7 +358,7 @@ app.post('/answer-question', async (req, res) => {
 
 
         <!-- Example 17: --> 
-        <!-- What is the time frame of reporting true sanction hit internally to the relevant person?  -->
+        <!-- What is the time frame of reporting a true sanction hit internally to the relevant person?  -->
         
         <!-- Answer Format: 
             <!-- Analysis: Sanctions Screening: The target document states, that all confirmed sanctions must be immediately shared with the MLRO for reporting to the **relevant authority** (e.g. NCA)
@@ -369,17 +369,17 @@ app.post('/answer-question', async (req, res) => {
 
 
         <!-- Example 18: --> 
-        <!-- IF a true Sanctions hit is found what is the reporting process and how does the client freeze the assets and block the accounts? -->
+        <!-- IF a true Sanctions hit is found, what is the reporting process and how does the client freeze the assets and block the accounts? -->
         
         <!-- Answer Format: 
-            <!-- Analysis: The clients document advises that client funds must be frozen immediately and block the accounts from being used. The Accounts are blocked in ** tool name** and the **relevant authority** (NCA) is informed 
+            <!-- Analysis: The client's document advises that client funds must be frozen immediately and block the accounts from being used. The Accounts are blocked in ** tool name** and the **relevant authority** (NCA) is informed 
             -->
                 <!-- Status: [Compliance Status] -->
         -->
 
 
         <!-- Example 19: --> 
-        <!-- Does the Client have a UAR procedure? If so compare this against the banks UAR procedure and check if it is compliant with the source document’s UAR process? -->
+        <!-- Does the Client have a UAR procedure? If so, compare this against the bank's UAR procedure and check if it is compliant with the source document’s UAR process? -->
         
         <!-- Answer Format: 
             <!-- Analysis: No the client does not have a UAR process in place, they have a SAR process in place which aligns to the Bank's SAR process
@@ -409,7 +409,7 @@ Numerical Limits
 
         <!-- Example 21: --> 
         <!--  Now compare both documents and major consistencies and inconsistencies in the Client's Policy Document compared to Bank's Policy Document. Give a conclusion summary. -->
-        <!-- Special Instructions: This is a special question and requires you to thoroughly analyse both documents and I dentify any inconsistencies in the client's document when compared with the bank's document. Be thorough in your analysis and identify as many Inconsistencies and Consistency as possible. There is no need to show supporting passage here
+        <!-- Special Instructions: This is a special question and requires you to thoroughly analyse both documents and Identify any inconsistencies in the client's document when compared with the bank's document. Be thorough in your analysis and identify as many Inconsistencies and Consistency as possible. There is no need to show supporting passage here
         <!-- Answer Format: 
             <!-- Inconsistencies:
 
@@ -450,7 +450,7 @@ Numerical Limits
         3. BE EXPLICIT ABOUT COMPLIANCE GAPS
 
           Here are what the following terms should mean:
-            *Analyis*: Your analysis of the clause
+            *Analysis*: Your analysis of the clause
             *Supporting Passage*: The relevant passage from the document
             *Status*:  Compliant or Needs Manual Review or Not Applicable
 
