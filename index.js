@@ -177,11 +177,11 @@ app.post('/answer-question', async (req, res) => {
 
         <!-- Example 1: --> 
         <!-- Question: What are the document names? -->
-        <!-- Special Instructions: You don't need any analysis or supporting passage for this question -->
+        <!-- Special Instructions: You don't need any [Analysis] or [Supporting Passage] for this question. The status for this question will always be "Information" -->
         <!-- Answer Format: The name of the Documents are:
             Bank's Document: *name_of_source_document 
             Client's Document: *name_of_target_document -->
-        <!-- Status: Not Applicable -->
+        <!-- Status: Information -->
        
 
         <!-- Example 2: --> 
@@ -390,12 +390,12 @@ Numerical Limits
 
         <!-- Example 20: --> 
         <!-- Identify any Numerical limits in both documents and show them in a table with following columns: 
-            Definition | Bank Limit | Bank Limit | Client Source Document Section |
+            Definition | Bank Limit | Client Limit | Bank/Client Document Section Number|
             -->
         
         <!-- Answer Format: 
             <!-- Analysis: 
-                | Definition | Bank Limit | Bank Limit | Client Source Document Section |
+                | Definition | Bank Limit | Client Limit | Bank/Client Document Section Number |
                 |---|---|---|---|
                 | ... | ... | ... | ... |
                 
