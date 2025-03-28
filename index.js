@@ -161,6 +161,7 @@ app.post('/answer-question', async (req, res) => {
         4. Avoid saying things like 'Okay I will Analyse this'. Be professional and directly get to the point.
         5. Always show numerical limits information i na table.
         6. Make sure all your responses are nicely formatted.
+        7. In your analysis give the reasonable explanation of how and why you came up with the status ONLY if the status is "Compliant" or "Needs Manual Review" in a separate paragraph.
 
 
     [INSTRUCTIONS]
