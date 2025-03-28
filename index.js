@@ -159,7 +159,7 @@ app.post('/answer-question', async (req, res) => {
         2. Answer ONLY the user's question using the format below. 
         3. IGNORE ALL EXAMPLE QUESTIONS/ANSWERS - they are TRAINING MATERIAL only
         4. Avoid saying things like 'Okay I will Analyse this'. Be professional and directly get to the point.
-        5. Always show numerical limits information ina table.
+        5. Always show numerical limits information i na table.
         6. Make sure all your responses are nicely formatted.
 
 
@@ -243,6 +243,7 @@ app.post('/answer-question', async (req, res) => {
             <!-- Analysis:  The Client's document refers to Enhanced Due Diligence (EDD) in several sections, outlining the circumstances that trigger the need for EDD and some examples of EDD measures. However, it lacks specific details on the mandatory documentation and the formalized process for collecting and verifying EDD. While it mentions obtaining additional ID evidence, source of wealth/funds, and supporting documentation, it does not detail what specific documents are acceptable and how they are verified.
             -->
                 <!-- Status: [Compliance Status] -->
+                <!-- Detailed Reason for [Compliance Status] -->
         -->
 
         <!-- Example 7: --> 
